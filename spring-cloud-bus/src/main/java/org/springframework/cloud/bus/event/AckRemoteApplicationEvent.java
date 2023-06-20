@@ -30,6 +30,8 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 @SuppressWarnings("serial")
 public class AckRemoteApplicationEvent extends RemoteApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	private final String ackId;
 
 	private final String ackDestinationService;

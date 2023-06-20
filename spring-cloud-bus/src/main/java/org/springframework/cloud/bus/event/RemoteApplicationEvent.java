@@ -33,6 +33,8 @@ import org.springframework.util.Assert;
 @JsonIgnoreProperties("source")
 public abstract class RemoteApplicationEvent extends ApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	private static final Object TRANSIENT_SOURCE = new Object();
 
 	private static final String TRANSIENT_ORIGIN = "____transient_origin_service___";

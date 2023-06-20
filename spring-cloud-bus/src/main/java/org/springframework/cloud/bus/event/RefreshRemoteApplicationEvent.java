@@ -22,6 +22,8 @@ package org.springframework.cloud.bus.event;
 @SuppressWarnings("serial")
 public class RefreshRemoteApplicationEvent extends RemoteApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	@SuppressWarnings("unused")
 	private RefreshRemoteApplicationEvent() {
 		// for serializers

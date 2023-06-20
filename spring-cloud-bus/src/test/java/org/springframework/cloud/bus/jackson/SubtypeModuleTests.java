@@ -144,6 +144,8 @@ public class SubtypeModuleTests {
 	@JsonTypeName("my")
 	public static class MyRemoteApplicationEvent extends RemoteApplicationEvent {
 
+		private static final long serialVersionUID = 1;
+
 		@SuppressWarnings("unused")
 		private MyRemoteApplicationEvent() {
 		}
@@ -161,6 +163,8 @@ public class SubtypeModuleTests {
 	@SuppressWarnings("serial")
 	@JsonTypeName("another")
 	public static class AnotherRemoteApplicationEvent extends RemoteApplicationEvent {
+
+		private static final long serialVersionUID = 1;
 
 		@SuppressWarnings("unused")
 		private AnotherRemoteApplicationEvent() {

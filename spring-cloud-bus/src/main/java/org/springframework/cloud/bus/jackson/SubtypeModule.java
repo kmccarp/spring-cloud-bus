@@ -24,6 +24,8 @@ import com.fasterxml.jackson.databind.module.SimpleModule;
 @SuppressWarnings("serial")
 public class SubtypeModule extends SimpleModule {
 
+	private static final long serialVersionUID = 1;
+
 	private Class<?>[] subtypes;
 
 	public SubtypeModule(Class<?>... subtypes) {

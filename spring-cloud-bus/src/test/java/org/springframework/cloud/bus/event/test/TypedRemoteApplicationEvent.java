@@ -24,6 +24,8 @@ import org.springframework.cloud.bus.event.RemoteApplicationEvent;
 @JsonTypeName("typed")
 public class TypedRemoteApplicationEvent extends RemoteApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	@SuppressWarnings("unused")
 	private TypedRemoteApplicationEvent() {
 	}
