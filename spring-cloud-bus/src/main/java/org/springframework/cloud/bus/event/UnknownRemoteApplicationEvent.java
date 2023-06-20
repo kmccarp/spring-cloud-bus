@@ -23,6 +23,8 @@ import org.springframework.core.style.ToStringCreator;
  */
 public class UnknownRemoteApplicationEvent extends RemoteApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	protected String typeInfo;
 
 	protected byte[] payload;

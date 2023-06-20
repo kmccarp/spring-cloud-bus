@@ -21,6 +21,8 @@ import org.springframework.cloud.bus.event.RemoteApplicationEvent;
 @SuppressWarnings("serial")
 public class FooBarTestRemoteApplicationEvent extends RemoteApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	@SuppressWarnings("unused")
 	private FooBarTestRemoteApplicationEvent() {
 	}

@@ -36,6 +36,8 @@ import org.springframework.context.ApplicationEvent;
 @JsonIgnoreProperties("source")
 public class SentApplicationEvent extends ApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	private static final Object TRANSIENT_SOURCE = new Object();
 
 	private final String originService;

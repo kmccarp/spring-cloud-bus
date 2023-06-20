@@ -85,6 +85,8 @@ public class BusJacksonIntegrationTests {
 
 	public static class NameEvent extends RemoteApplicationEvent {
 
+		private static final long serialVersionUID = 1;
+
 		private String name;
 
 		protected NameEvent() {
@@ -111,7 +113,7 @@ public class BusJacksonIntegrationTests {
 	@RemoteApplicationEventScan
 	protected static class Config {
 
-		final private Set<String> names = ConcurrentHashMap.newKeySet();
+		private final Set<String> names = ConcurrentHashMap.newKeySet();
 
 		@Autowired
 		private ServiceMatcher busServiceMatcher;

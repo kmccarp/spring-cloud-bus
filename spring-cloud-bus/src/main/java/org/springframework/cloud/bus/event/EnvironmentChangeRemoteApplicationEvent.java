@@ -27,6 +27,8 @@ import org.springframework.util.Assert;
 @SuppressWarnings("serial")
 public class EnvironmentChangeRemoteApplicationEvent extends RemoteApplicationEvent {
 
+	private static final long serialVersionUID = 1;
+
 	private final Map<String, String> values;
 
 	@SuppressWarnings("unused")
